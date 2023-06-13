@@ -20,14 +20,14 @@ $book-size: 3.5;
 	left: 0;
 	right: 0;
 	z-index: -1;
-	background-image: url("/assets/default/book.webp");
+	background-image: url("default/book.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
 :root[data-texture-pack='true'] .Book::before {
-	background-image: url("/assets/barebones/book.webp");
+	background-image: url("barebones/book.webp");
 }
 
 .Book.Book_inverted::before {

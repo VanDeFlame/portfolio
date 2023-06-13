@@ -27,7 +27,7 @@ function Contact() {
 										text={socialMedia.name}
 										subtext={socialMedia.user}
 										alt={socialMedia.name}
-										src={`/assets/icons/${socialMedia.name.toLowerCase()}-icon.webp`}
+										src={`assets/icons/${socialMedia.name.toLowerCase()}-icon.webp`}
 									/>
 								</a>
 							</Slot>
@@ -42,7 +42,7 @@ function Contact() {
 							text='Email'
 							subtext='vandeflame@gmail.com'
 							alt='Email'
-							src='/assets/icons/email-icon.webp'
+							src='assets/icons/email-icon.webp'
 						/>
 					</a>
 				</Slot>

@@ -11,13 +11,20 @@
 	justify-content: center;
 }
 
-.JobShowcase-content p {
-	overflow-y: auto;
+.JobShowcase-content p,
+.JobShowcase-dateRange {
 	font-size: small;
 }
 
 .JobShowcase-content .Book {
 	gap: 12px;
+}
+
+.JobShowcase-info {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	overflow-y: auto;
 }
 
 .JobShowcase-buttons {

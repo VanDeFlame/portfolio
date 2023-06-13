@@ -19,7 +19,7 @@ function GameMenu({ settings, setSettings }: Props) {
 			return ({
 				...prev,
 				texturePack: newValue,
-				assetsFolder: '/assets/' + (newValue ? 'barebones/' : 'default/')
+				assetsFolder: 'assets/' + (newValue ? 'barebones/' : 'default/')
 			});
 		});
 	};

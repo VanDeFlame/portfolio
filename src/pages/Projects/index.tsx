@@ -37,7 +37,7 @@ function Projects({ language }: Settings) {
 								onClick={() => handleProjectClick(project)}
 								text={project.title}
 								subtext={project.short[language]}
-								src={`/assets/projects/${project.id}.webp`}
+								src={`assets/projects/${project.id}.webp`}
 							/>
 						</Slot>
 					))

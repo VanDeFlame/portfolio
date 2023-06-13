@@ -21,13 +21,13 @@ function App() {
 	const [settings, setSettings] = useState<Settings>({
 		texturePack: false,
 		language: 'en',
-		assetsFolder: '/assets/default/'
+		assetsFolder: 'assets/default/'
 	});
 
 	const links: TabLink[] = [
 		{ name: 'Search', 					item: settings.assetsFolder + 'compass.webp', 						url: '/' },
-		{ name: 'About Me', 				item: settings.assetsFolder + 'head.webp', 							url: '/aboutme' },
-		{ name: 'Projects', 				item: settings.assetsFolder + 'comparator.webp', 				url: '/projects' },
+		{ name: 'About Me', 				item: settings.assetsFolder + 'head.webp', 								url: '/aboutme' },
+		{ name: 'Projects', 				item: settings.assetsFolder + 'comparator.webp', 					url: '/projects' },
 		{ name: 'Job Experience', 	item: settings.assetsFolder + 'experience_bottle.webp', 	url: '/jobs' },
 		{ name: 'Contact', 					item: settings.assetsFolder + 'writable_book.webp', 			url: '/contact' },
 		{ name: 'Curriculum Vitae', item: settings.assetsFolder + 'paper.webp', 							url: 'https://vandeflame.github.io/curriculum/' },
@@ -53,28 +53,28 @@ function App() {
 					<main className='custom-scrollbar'>
 						<React.Suspense fallback={<LoadingScreen/>}>
 							<Routes>
-								<Route index path='/' 			element={
+								<Route index path='/' 				element={
 									<IndexList pageLinks={links} />
 								}/>
-								<Route path='/gamemenu' 		element={
+								<Route path='/gamemenu' 			element={
 									<GameMenu settings={settings} setSettings={setSettings} />
 								}/>
-								<Route path='/aboutme' 			element={
+								<Route path='/aboutme' 				element={
 									<AboutMe {...settings} />
 								}/>
-								<Route path='/contact' 			element={
+								<Route path='/contact' 				element={
 									<Contact />
 								}/>
-								<Route path='/projects' 		element={
+								<Route path='/projects' 			element={
 									<Projects {...settings} />
 								}/>
-								<Route path="/projects/:id" element={
+								<Route path="/projects/:id" 	element={
 									<ProjectShowcase {...settings} />
 								}/>
-								<Route path='/jobs' 				element={
+								<Route path='/jobs' 					element={
 									<Jobs />
 								}/>
-								<Route path='/jobs/:company' 				element={
+								<Route path='/jobs/:company'	element={
 									<JobShowcase {...settings} />
 								}/>
 							</Routes>

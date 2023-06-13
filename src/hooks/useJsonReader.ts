@@ -1,6 +1,6 @@
 function useJsonReader() {
 	return <T>(fileName: string) => new Promise<T>((resolve, reject) => {
-		fetch(`/assets/${fileName}.json`)
+		fetch(`assets/${fileName}.json`)
 			.then(resp => resp.json() as T)
 			.then(resp => {
 				if (resp) {

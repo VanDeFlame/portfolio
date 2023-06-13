@@ -36,32 +36,34 @@ function JobShowcase({ language }: Settings) {
 
 				<div className="Book Book_inverted">
 					<h3 className="JobShowcase-position">{job.position}</h3>
-					<p className="JobShowcase-DateRange">
+					<p className="JobShowcase-dateRange">
 						{job.startDate} - {job.endDate}
 					</p>
 					<p>{job.info[language].description}</p>
 				</div>
 
 				<div className="Book">
-					<p>
-            Technologies:<br />
-						{job.technologies}
-					</p>
-					<p>
-            Responsibilities:<br />
-						{job.info[language].responsibilities}
-					</p>
-					<p>
-            Team:<br />
-						{job.info[language].team}
-					</p>
-					{
-						job.info[language].extraInformation &&
+					<div className='JobShowcase-info'>
 						<p>
-              Extra Information:<br />
-							{job.info[language].extraInformation}
+							Technologies:<br />
+							{job.technologies}
 						</p>
-					}
+						<p>
+							Responsibilities:<br />
+							{job.info[language].responsibilities}
+						</p>
+						<p>
+							Team:<br />
+							{job.info[language].team}
+						</p>
+						{
+							job.info[language].extraInformation &&
+							<p>
+								Extra Information:<br />
+								{job.info[language].extraInformation}
+							</p>
+						}
+					</div>
 				</div>
 			</div>
 		</div>

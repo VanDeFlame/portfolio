@@ -26,8 +26,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-	--texture-pack: '/assets/default';
 }
 
 body {
@@ -45,7 +43,7 @@ body {
 	min-height: 100vh;
 	padding: 12px;
 	color: $color-text;
-	background-image: url("/assets/background.webp");
+	background-image: url("background.webp");
 	background-size: 64px;	
 	overflow: auto;
 }
