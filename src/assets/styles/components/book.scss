@@ -1,0 +1,68 @@
+@import './../vars';
+
+$book-size: 3.5;
+
+/* BOOK BACKGROUND */
+.Book {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: calc(74px * $book-size);
+	height: calc(91px * $book-size);
+	padding: calc(10px * $book-size) calc(9px * $book-size);
+}
+
+.Book::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-image: url("/assets/default/book.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+:root[data-texture-pack='true'] .Book::before {
+	background-image: url("/assets/barebones/book.webp");
+}
+
+.Book.Book_inverted::before {
+	transform: scaleX(-1);
+}
+
+// Book Scrollbar
+.Book {	
+	::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	::-webkit-scrollbar-track {
+		border: none;
+		background-color: $color-book-scrollbar-track;
+	}
+
+	/* Hide arrows */
+	::-webkit-scrollbar-button {
+		display: none;
+	}
+
+	/* Indicator */
+	::-webkit-scrollbar-thumb {
+		background-color: $color-book-scrollbar-one;
+	}		
+
+	::-webkit-scrollbar-thumb:active,
+	::-webkit-scrollbar-thumb:hover {
+		background-color: $color-book-scrollbar-two;
+	}
+
+	/* Firefox */
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: $color-book-scrollbar-one $color-book-scrollbar-two ;
+	}
+}

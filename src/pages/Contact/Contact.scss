@@ -1,0 +1,23 @@
+@import './../../assets/styles/vars';
+
+.Contact {
+	display: flex;
+	flex-direction: column;
+	gap: 12px 0;
+	overflow: hidden;
+}
+
+.Contact-cta {
+	margin: 10px;
+	text-align: center;
+	font-size: larger;
+}
+
+@media (width < 1300px) {
+	.Contact .Toast {
+    top: -200px;
+		left: auto;
+    right: 50%;
+    transform: translateX(50%);
+	}
+}

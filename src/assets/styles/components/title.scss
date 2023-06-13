@@ -1,0 +1,9 @@
+@import './../vars';
+
+.Title {
+	line-height: 1.25;
+	font-size: x-large;
+	text-align: center;
+	text-shadow: $text-shadow-blue;
+	color: $color-text-blue;
+}

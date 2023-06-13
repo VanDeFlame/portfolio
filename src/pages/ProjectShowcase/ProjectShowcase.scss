@@ -1,0 +1,35 @@
+@import './../../assets/styles/vars';
+
+.ProjectShowcase {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ProjectShowcase-content {
+	display: flex;
+	justify-content: center;
+}
+
+.ProjectShowcase-content p {
+	overflow-y: auto;
+	font-size: small;
+}
+
+.ProjectShowcase-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: auto;
+}
+
+.ProjectShowcase-goback {
+	position: absolute;
+	bottom: 8px;
+	left: 12px;
+	border: none;
+	background: none;
+	color: $color-text-black;
+	cursor: pointer;
+}
+

@@ -1,0 +1,21 @@
+[
+	{
+		"position": "FullStack Developer",
+		"company": "GlobalTech",
+		"startDate": "May 2022",
+		"endDate": "Oct 2022",
+		"technologies": "Angular, TypeScript, Sass, Java, Spring Boot, MySQL",
+		"info": {
+			"en": {
+				"description": "Project Skillable, an English courses platform.",
+				"responsibilities": "Built and maintained features, fixed bugs, and managed the production server.",
+				"team": "Managed and trained a team of three developers."
+			},
+			"es": {
+				"description": "Proyecto Skillable, una plataforma de cursos de inglés.",
+				"responsibilities": "Desarrollé y mantuve características, solucioné errores y gestioné el servidor de producción.",
+				"team": "Gestioné y entrené a un equipo de tres desarrolladores."
+			}
+		}
+	}
+]

@@ -1,0 +1,15 @@
+.ToastTooltip > .Toast {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: calc(100% + 12px);
+
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s;
+}
+
+.ToastTooltip:hover .Toast {
+	visibility: visible;
+	opacity: 1;
+}

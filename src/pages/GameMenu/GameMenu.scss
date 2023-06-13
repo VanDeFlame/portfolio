@@ -1,0 +1,17 @@
+.GameMenu {
+	display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto repeat(5, 1fr);
+	justify-items: center;
+	gap: 12px;
+}
+
+.GameMenu > .Title {
+	grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.GameMenu .Button {
+	height: 50px;
+	font-size: large;
+}

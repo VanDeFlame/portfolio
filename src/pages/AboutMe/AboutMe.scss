@@ -1,0 +1,48 @@
+.AboutMe {
+	display: flex;
+	flex-direction: column;
+	padding: 0 12px;
+	gap: 12px;
+}
+
+.AboutMe-effects {
+	position: absolute;
+	left: calc(100% + 12px);
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	list-style: none;
+
+	.Toast {
+		width: 100%;
+	}
+}
+
+.AboutMe-description {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 6px 0;
+}
+
+.AboutMe-likes > ul {
+	margin-top: 4px;
+	padding-left: 32px;
+}
+
+@media (width < 1200px) {
+	.AboutMe-effects {		
+		left: 0;
+    top: -180px;
+		flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 608px 0;
+		pointer-events: none;
+
+		& > li {
+			pointer-events: all;
+		}
+	}
+}

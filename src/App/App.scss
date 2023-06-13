@@ -1,0 +1,36 @@
+@import '../assets/styles/components/book.scss';
+@import '../assets/styles/components/button.scss';
+@import '../assets/styles/components/scrollbar.scss';
+@import '../assets/styles/components/title.scss';
+
+.App {
+	z-index: 5;
+	height: 100%;
+	margin: auto;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.Navbar {
+	display: flex;
+	flex-direction: row;
+	gap: 0 3px;
+	width: fit-content;
+}
+
+.Navbar.Navbar_inverted {
+	flex-direction: row-reverse;
+}
+
+header .Navbar {
+	align-items: flex-end;
+}
+
+footer .Navbar {
+	align-items: flex-start;
+}

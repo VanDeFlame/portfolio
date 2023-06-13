@@ -1,0 +1,49 @@
+@import './../../assets/styles/vars';
+
+.Toast {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	min-width: 256px;
+	min-height: 80px;
+	max-width: 340px;
+	padding: 4px 8px;
+	border: 3px solid $color-border-black;
+	border-radius: 8px;
+	box-shadow: 
+		inset 4px 4px 0 $color-border-two,
+		inset -4px 4px 0 $color-border-two,
+		inset -4px -4px 0 $color-border-two,
+		inset 4px -4px 0 $color-border-two;
+	background: $color-toast;
+}
+
+.Toast-figure {
+	height: 56px;
+	width: 56px;
+	aspect-ratio: 1/1;
+	padding: 4px;
+
+	& > .Toast-img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.Toast-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 4px 8px;
+	gap: 4px;
+
+	& > .Toast-title {
+		color: $color-text-white;
+		font-size: large;
+		line-height: 1.5;
+		text-shadow: $text-shadow-white;
+	}
+	& > .Toast-desc {
+		color: $color-text-light-gray;
+	}
+}

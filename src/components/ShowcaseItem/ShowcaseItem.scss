@@ -1,0 +1,23 @@
+@import './../../assets/styles/vars';
+
+.ShowcaseItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	width: 150px;
+	height: 150px;
+	padding-top: 12px;
+}
+
+.ShowcaseItem img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+  
+.ShowcaseItem p {
+	max-width: 120px;
+	font-size: 16px;
+	text-align: center;
+	color: $color-text-black;
+}

@@ -1,0 +1,128 @@
+@import './../../assets/styles/vars';
+
+/* BASIC */
+.Tabs {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 84px;
+	height: 84px;
+	padding: 8px;
+	border-style: solid; /* Outer border */
+	border-color: $color-border-black;
+	background-color: $color-slot;
+}
+
+/* FIRST CHILD */
+.Tabs:first-child {
+	height: 90px;
+}
+
+.Tabs:first-child.active::before {
+	left: 6px;
+	width: 66px;
+	background-color: $color-inventory;
+}
+
+/* ACTIVE */
+.Tabs.active {
+	z-index: 50;
+	height: 99px;
+	background-color: $color-inventory;
+}
+
+.Tabs.active::before {
+	content: '';
+	position: absolute;
+	left: -6px;
+	height: 6px;
+	width: 12px;
+}
+
+.Tabs.active::after {
+	content: '';
+	position: absolute;
+	right: -6px;
+	bottom: 0px;
+	height: 6px;
+	width: 6px;
+	background-color: $color-border-one;
+}
+
+.Navbar.Navbar_inverted {
+	.Tabs:not(:first-child).active::before {
+		right: -15px;
+		left: auto;
+		width: 15px;
+	}
+
+	.Tabs.active::after {
+		left: -6px;
+		right: auto;
+	}
+
+	.Tooltip-text {
+		left: auto;
+		right: 50%;
+	}
+}
+
+/* IN HEADER */
+header {
+	.Tabs {
+		border-radius: 9px 9px 0 0;
+		border-width: 3px 3px 0 3px;
+		box-shadow:
+			inset 6px 6px 0 0 $color-border-one, /* Inner border - left-top */
+			inset -6px 0 0 0 $color-border-two; /* Inner border - right-bottom */
+	}
+
+	.Tabs:first-child {
+		top: 6px;
+	}
+
+	.Tabs:first-child.active::before {
+		bottom: -6px;
+	}
+
+	.Tabs.active {
+		top: 9px;
+	}
+	
+	.Tabs.active::before,
+	.Tabs.active::after {
+		bottom: 0px;
+		background-color: $color-border-one;
+	}
+
+}
+
+/* IN FOOTER */
+footer {
+	.Tabs {
+		border-radius: 0 0 9px 9px;
+		border-width: 0 3px 3px 3px;
+		box-shadow:
+			inset -6px -6px 0 0 $color-border-two, /* Inner border - right-bottom */
+			inset 6px 0 0 0 $color-border-one; /* Inner border - left-top */
+	}
+
+	.Tabs:first-child {
+		bottom: 6px;
+	}
+	
+	.Tabs:first-child.active::before {
+		top: -6px;
+	}
+
+	.Tabs.active {
+		bottom: 9px;
+	}
+	
+	.Tabs.active::before,
+	.Tabs.active::after {
+		top: 0px;
+		background-color: $color-border-two;
+	}
+}

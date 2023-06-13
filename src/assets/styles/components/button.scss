@@ -1,0 +1,39 @@
+@import './../vars';
+
+.Button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	aspect-ratio: 5/1;
+	border: 3px solid $color-border-black; /* Outer border */
+  box-shadow:
+		inset 3px 3px 0 0 $color-border-one, /* Inner border - left-top */
+		inset -3px -6px 0 0 $color-border-two; /* Inner border - right-bottom */
+	background-color: $color-slot;
+	color: $color-text-white;
+	text-shadow: $text-shadow;
+	font-size: 16px;
+  font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.Button:hover:not([disabled]) {
+	border-color: $color-border-button-hover-three;
+	box-shadow:
+		inset 3px 3px 0 0 $color-border-button-hover-one, /* Inner border - left-top */
+		inset -3px -6px 0 0 $color-border-button-hover-two; /* Inner border - right-bottom */
+	background-color: $color-button-hover;
+	color: $color-text-button-hover;
+	text-shadow: $text-shadow-yellow;
+}
+
+.Button[disabled] {
+	box-shadow: none;
+	background-color: $color-button-disabled;
+	color: $color-text-light-gray;
+	cursor: default;
+}

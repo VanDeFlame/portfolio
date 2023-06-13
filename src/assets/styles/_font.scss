@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: 
+		url('/assets/fonts/minecraft.ttf') 						format('truetype'),
+		url('/assets/fonts/minecraft.eot?') 					format('eot'),
+		url('/assets/fonts/minecraft.woff') 					format('woff'),
+		url('/assets/fonts/minecraft.svg#Minecraft') 	format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font: "Minecraft", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

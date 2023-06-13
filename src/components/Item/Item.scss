@@ -1,0 +1,10 @@
+.Item {
+	width: 48px;
+	height: 48px;
+	aspect-ratio: 1/1;
+}
+
+.Item > img {
+	width: 100%;
+	height: 100%;
+}

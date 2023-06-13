@@ -1,0 +1,23 @@
+@import './../../assets/styles/vars';
+
+.Slot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 51px;
+	width: 100%;
+	min-height: 51px;
+	height: 100%;
+	aspect-ratio: 1/1;
+	border: 3px solid transparent;
+	border-color: $color-border-three $color-border-one $color-border-one $color-border-three;
+	background-color: $color-slot;
+}
+
+.Slot:hover {
+	background-color: #ffffff80;
+}
+
+.Slot > * {
+	cursor: pointer;
+}

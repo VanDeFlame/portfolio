@@ -1,0 +1,18 @@
+@import './../../assets/styles/vars';
+
+.IndexList {
+	width: 100%;
+}
+
+.IndexList ul {
+	padding: 12px 24px;
+}
+
+.IndexList ul > li {
+	margin: 4px 0;
+	font-size: x-large;
+}
+
+.IndexList ul > li:hover > a {
+	color: $color-text-white;
+}

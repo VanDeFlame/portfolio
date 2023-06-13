@@ -1,0 +1,45 @@
+@import './../vars';
+
+.custom-scrollbar {
+	overflow: auto;
+
+  /* Track */
+	&::-webkit-scrollbar {
+		width: 36px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-top: 3px solid $color-border-three;
+		border-right: 3px solid $color-border-one;
+		border-bottom: 3px solid $color-border-one;
+		border-left: 3px solid $color-border-three;
+		background-color: $color-slot;
+	}
+
+	&::-webkit-scrollbar-corner {
+		background-color: transparent;
+	}
+
+	/* Hide arrows */
+	&::-webkit-scrollbar-button {
+		display: none;
+	}
+
+	/* Indicator */
+	&::-webkit-scrollbar-thumb {
+		background-color: $color-inventory;		
+		border-top: 3px solid $color-border-one;
+		border-right: 3px solid $color-border-two;
+		border-bottom: 3px solid $color-border-two;
+		border-left: 3px solid $color-border-one;
+		border-radius: 0px;
+	}		
+
+	&::-webkit-scrollbar-thumb:active,
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: $color-slot;
+	}
+
+	/* Firefox */	
+	scrollbar-color: $color-slot $color-border-one;
+}
