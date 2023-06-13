@@ -1,7 +1,7 @@
 {
   "name": "mc-portfolio",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "homepage": "https://VanDeFlame.github.io/portfolio",
   "scripts": {
@@ -11,7 +11,7 @@
     "lint:fix": "eslint --fix --fix-type problem src",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
