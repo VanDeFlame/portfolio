@@ -1,0 +1,15 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+	gap: 20px;
+
+	h3 ~ p,
+	h3 ~ ul {
+		margin-top: 4px;
+		padding: 0 16px;
+	}
+
+	ul > li {
+		margin-top: 4px;
+	}
+}

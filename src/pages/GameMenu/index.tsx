@@ -51,6 +51,12 @@ function GameMenu({ settings, setSettings }: Props) {
 				className='Button'
 				onClick={onHandleTexturePack}
 			>Texture Pack: {(settings.texturePack) ? 'ON' : 'OFF'}</button>
+			<a
+				className='Button'
+				target='_blank'
+				rel='noopener noreferrer'
+				href='https://vandeflame.github.io/portfolio-mobile/'
+			>Mobile Version</a>
 		</div>
 	);
 }
