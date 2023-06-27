@@ -10,7 +10,7 @@
 			"en": "The curriculum of this FrontEnd developer highlights their experience and skills in the field. It provides a detailed overview of the projects they have worked on and the technologies they have utilized. Within the curriculum, recruiters and employers will find a comprehensive description of the developer's achievements and responsibilities in specific projects. It also includes their technical skills and mastered technologies.",
 			"es": "El currículum de este desarrollador FrontEnd destaca su experiencia y habilidades en el campo. Proporciona una visión detallada de los proyectos en los que ha trabajado y las tecnologías que ha utilizado. En el currículum, los reclutadores y empleadores encontrarán una descripción detallada de los logros y responsabilidades del desarrollador en proyectos específicos. También se incluyen las habilidades técnicas y las tecnologías que domina."
 		},
-		"technologies": "React, Sass, Typescript",
+		"technologies": "React, Sass, TypeScript",
 		"repository": "https://github.com/vandeflame/curriculum",
 		"implementation": "https://vandeflame.github.io/curriculum/"
 	},
@@ -25,7 +25,7 @@
 			"en": "In the Genshin Impact video game, artifacts are part of a character's main equipment. This tool provides help when discarding those artifacts whose statistics are not the desired ones. The operation is moderately simple, the rolls are simulated and the user is given the percentage of appearance of each possible substat.",
 			"es": "En el videojuego Genshin Impact, los artefactos son parte del equipamiento principal de un personaje. Esta herramienta brinda una ayuda a la hora de descartar aquellos artefactos cuyas estadisticas no sean las deseadas. El funcionamiento es medianamente simple, se simulan las tiradas y se le brinda al usuario el porcentaje de aparición de cada substat posible."
 		},
-		"technologies": "React, Css, Typescript, Bootstrap",
+		"technologies": "React, CSS, TypeScript, Bootstrap",
 		"repository": "https://github.com/vandeflame/genshin-substat-predictor",
 		"implementation": "https://vandeflame.github.io/genshin-substat-predictor/"
 	},
@@ -40,7 +40,7 @@
 			"en": "A REST API developed throughout 3 courses from Platzi's Backend School with NodeJS: REST API with Express.js, Database with PostgreSQL, Authentication with Passport.js and JWT. In addition to the obvious technologies, Sequelize was also used for creating migrations, and error handling with custom middlewares. It is also worth mentioning the use of Docker to set up the databases used.",
 			"es": "API REST desarrollada a lo largo de 3 cursos de Platzi de la escuela de Backend con NodeJS: API REST con Express.js, Base de Datos con PostgreSQL, Autenticación con Passport.js y JWT. Además de las tecnologías obvias, también se trabajo con Sequelize creando migraciones, y manejo de errores con middlewares personalizados. También es interesante destacar el uso de docker para levantar las bases de datos utilizadas."
 		},
-		"technologies": "Typescript, NodeJS, Express, MySQL, PostgreSQL, JWT, Docker",
+		"technologies": "TypeScript, NodeJS, Express, MySQL, PostgreSQL, JWT, Docker",
 		"repository": "https://github.com/VanDeFlame/express-store"
 	},
 	{
@@ -54,7 +54,7 @@
 			"en": "A project developed as part of Platzi's React.js Course, where a TO-DO list was built based on React's state handling. Other features were also implemented, including props management, custom hooks, useReducer, React Context, React Portals, and storage with Local Storage.",
 			"es": "Un proyecto desarrollado como parte del Curso de React.js de Platzi, en el que se construyó una lista de tareas (TO-DO list) basada en el manejo de estados de React. También se trabajaron otras características, como la gestión de props, los custom hooks, el useReducer, el React Context, los React Portals y el almacenamiento con Local Storage."
 		},
-		"technologies": "React, Css, Typescript",
+		"technologies": "React, CSS, TypeScript",
 		"repository": "https://github.com/vandeflame/todo-app",
 		"implementation": "https://vandeflame.github.io/todo-app/"
 	}
