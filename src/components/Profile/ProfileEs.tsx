@@ -3,6 +3,8 @@ import React from 'react';
 function ProfileEs() {
 	return (
 		<section className='Profile'>
+			<p>Alexis Jauge, también conocido como VanDeFlame, desarrollador web dedicado y apasionado por crear experiencias de usuario excepcionales.</p>
+
 			<div>
 				<h3>Educación:</h3>
 				<p>
@@ -17,16 +19,16 @@ function ProfileEs() {
 
 			<div>
 				<h3>Colaboración y habilidades sociales:</h3>
-				<p>Comunicador efectivo utilizando ejemplos, ayudas visuales y analogías. Disfruto brindar ayuda y me convierto en un punto de referencia en equipos más grandes. Participar en conversaciones ligeras, discusiones profundas y juegos.</p>
+				<p>Comunicador efectivo utilizando ejemplos, ayudas visuales y analogías. Disfruta brindar ayuda y convertirse en un punto de referencia en equipos más grandes. Participa en conversaciones ligeras, discusiones profundas y juegos.</p>
 			</div>
 
 			<div>
 				<h3>Habilidades:</h3>
-				<p>
-					Frontend: React, TypeScript, HTML, CSS<br />
-					Backend: Java, NodeJS, Springboot, Express<br />
-					Bases de datos: SQL
-				</p>
+				<ul>
+					<li>Frontend: React, TypeScript, HTML, CSS</li>
+					<li>Backend: Java, NodeJS, Springboot, Express</li>
+					<li>Databases: SQL</li>
+				</ul>
 			</div>
 
 			<div>
