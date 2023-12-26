@@ -16,11 +16,11 @@ function GameMenu({ settings, setSettings }: Props) {
 			const newValue = !prev.texturePack;
 			html.setAttribute('data-texture-pack', String(newValue));
 
-			return ({
+			return {
 				...prev,
 				texturePack: newValue,
-				assetsFolder: 'assets/' + (newValue ? 'barebones/' : 'default/')
-			});
+				assetsFolder: 'assets/' + (newValue ? 'barebones/' : 'default/'),
+			};
 		});
 	};
 
@@ -32,10 +32,10 @@ function GameMenu({ settings, setSettings }: Props) {
 			const nextIndex = (currentIndex + 1) % availableLangs.length;
 			const newValue = availableLangs[nextIndex] as keyof Languages<any>;
 
-			return ({
+			return {
 				...prev,
-				language: newValue
-			});
+				language: newValue,
+			};
 		});
 	};
 
@@ -43,20 +43,20 @@ function GameMenu({ settings, setSettings }: Props) {
 		<div className='GameMenu'>
 			<h2 className='Title'>Game menu</h2>
 
-			<button
-				className='Button'
-				onClick={onHandleLanguage}
-			>Language: {settings.language.toLocaleUpperCase()}</button>
-			<button
-				className='Button'
-				onClick={onHandleTexturePack}
-			>Texture Pack: {(settings.texturePack) ? 'ON' : 'OFF'}</button>
+			<button className='Button' onClick={onHandleLanguage}>
+				Language: {settings.language.toLocaleUpperCase()}
+			</button>
+			<button className='Button' onClick={onHandleTexturePack}>
+				Texture Pack: {settings.texturePack ? 'ON' : 'OFF'}
+			</button>
 			<a
 				className='Button'
 				target='_blank'
 				rel='noopener noreferrer'
 				href='https://vandeflame.github.io/portfolio-mobile/'
-			>Mobile Version</a>
+			>
+				Mobile Version
+			</a>
 		</div>
 	);
 }

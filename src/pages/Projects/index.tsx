@@ -1,11 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Projects.scss';
 import { GridContainer } from '../../components/GridContainer';
-import { Slot } from '../../components/Slot';
 import { ShowcaseItem } from '../../components/ShowcaseItem';
-import { ProjectData } from '../../interfaces/ProjectData';
+import { Slot } from '../../components/Slot';
 import { useJsonReader } from '../../hooks/useJsonReader';
-import { useNavigate } from 'react-router-dom';
+import { ProjectData } from '../../interfaces/ProjectData';
 import { Settings } from '../../interfaces/Settings';
 
 function Projects({ language }: Settings) {
@@ -16,13 +16,13 @@ function Projects({ language }: Settings) {
 
 	React.useEffect(() => {
 		jsonReader<ProjectData[]>('projects')
-			.then(resp => setProjects(resp))
-			.catch(err => console.error(err));
-	}, []);
+			.then((resp) => setProjects(resp))
+			.catch((err) => console.error(err));
+	}, [jsonReader]);
 
 	const handleProjectClick = (project: ProjectData) => {
 		navigate(`/projects/${project.id}`, {
-			state: { project }
+			state: { project },
 		});
 	};
 
@@ -30,18 +30,16 @@ function Projects({ language }: Settings) {
 		<div className='Projects'>
 			<h2 className='Title'>Projects</h2>
 			<GridContainer columns={3} rows={rows}>
-				{
-					projects.map(project => (
-						<Slot key={project.id}>
-							<ShowcaseItem
-								onClick={() => handleProjectClick(project)}
-								text={project.title}
-								subtext={project.short[language]}
-								src={`assets/projects/${project.id}.webp`}
-							/>
-						</Slot>
-					))
-				}
+				{projects.map((project) => (
+					<Slot key={project.id}>
+						<ShowcaseItem
+							onClick={() => handleProjectClick(project)}
+							text={project.title}
+							subtext={project.short[language]}
+							src={`assets/projects/${project.id}.webp`}
+						/>
+					</Slot>
+				))}
 			</GridContainer>
 		</div>
 	);

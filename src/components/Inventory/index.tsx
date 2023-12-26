@@ -6,11 +6,7 @@ interface Props {
 }
 
 function Inventory({ children }: Props) {
-	return (
-		<div className='Inventory'>
-			{children}
-		</div>
-	);
+	return <div className='Inventory'>{children}</div>;
 }
 
 export { Inventory };

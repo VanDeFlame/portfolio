@@ -14,7 +14,7 @@ function GridContainer({ children, columns, rows }: Props) {
 
 	const childCount = React.Children.count(children);
 	const emptySlots: ReactNode[] = [];
-	const remainingSlots = (rows * columns) - childCount;
+	const remainingSlots = rows * columns - childCount;
 
 	for (let i = 0; i < remainingSlots; i++) {
 		emptySlots.push(<Slot key={i} />);

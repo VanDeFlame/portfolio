@@ -26,43 +26,44 @@ function JobShowcase({ language }: Settings) {
 	}
 
 	return (
-		<div className="JobShowcase">
-			<button
-				className="JobShowcase-goback"
-				onClick={handleGoBack}
-			>&lt; back</button>
-			<h2 className="Title">{job.company}</h2>
-			<div className="JobShowcase-content">
-
-				<div className="Book Book_inverted">
-					<h3 className="JobShowcase-position">{job.position}</h3>
-					<p className="JobShowcase-dateRange">
+		<div className='JobShowcase'>
+			<button className='JobShowcase-goback' onClick={handleGoBack}>
+				&lt; back
+			</button>
+			<h2 className='Title'>{job.company}</h2>
+			<div className='JobShowcase-content'>
+				<div className='Book Book_inverted'>
+					<h3 className='JobShowcase-position'>{job.position}</h3>
+					<p className='JobShowcase-dateRange'>
 						{job.startDate} - {job.endDate}
 					</p>
 					<p>{job.info[language].description}</p>
 				</div>
 
-				<div className="Book">
+				<div className='Book'>
 					<div className='JobShowcase-info'>
 						<p>
-							Technologies:<br />
+							Technologies:
+							<br />
 							{job.technologies}
 						</p>
 						<p>
-							Responsibilities:<br />
+							Responsibilities:
+							<br />
 							{job.info[language].responsibilities}
 						</p>
 						<p>
-							Team:<br />
+							Team:
+							<br />
 							{job.info[language].team}
 						</p>
-						{
-							job.info[language].extraInformation &&
+						{job.info[language].extraInformation && (
 							<p>
-								Extra Information:<br />
+								Extra Information:
+								<br />
 								{job.info[language].extraInformation}
 							</p>
-						}
+						)}
 					</div>
 				</div>
 			</div>

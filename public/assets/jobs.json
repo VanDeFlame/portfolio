@@ -7,12 +7,12 @@
 		"technologies": "TypeScript, Express, NodeJs, MySQL, React",
 		"info": {
 			"en": {
-				"description":"Project Digitalizacion T3, Movistar.",
+				"description": "Project Digitalizacion T3, Movistar.",
 				"responsibilities": "Build features and fix bugs, mainly APIs, and always following conventions.",
 				"team": "Participate in a team with 6 devs, as the newest but always collaborating."
 			},
 			"es": {
-				"description":"Project Digitalizacion T3, Movistar.",
+				"description": "Project Digitalizacion T3, Movistar.",
 				"responsibilities": "Desarrollar funciones y corregir errores, principalmente API, y siempre siguiendo las convenciones.",
 				"team": "Participo en un equipo con 6 devs, como el más novato pero siempre colaborando."
 			}

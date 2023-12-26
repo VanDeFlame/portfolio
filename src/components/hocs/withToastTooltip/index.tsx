@@ -8,9 +8,9 @@ const withToastTooltip = <P extends object>(
 ): React.FC<P & ToastProps> => {
 	const WithToastTooltip: React.FC<P & ToastProps> = ({ ...props }) => {
 		return (
-			<div className="ToastTooltip">
-				<Component {...props as P} />
-				<Toast text={props.text} subtext={props.subtext} src={props.src}/>
+			<div className='ToastTooltip'>
+				<Component {...(props as P)} />
+				<Toast text={props.text} subtext={props.subtext} src={props.src} />
 			</div>
 		);
 	};

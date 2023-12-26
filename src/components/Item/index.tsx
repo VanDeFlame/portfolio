@@ -11,10 +11,7 @@ interface Props {
 function Item({ alt, src }: Props) {
 	return (
 		<figure className='Item'>
-			<img
-				src={src}
-				alt={alt}
-			/>
+			<img src={src} alt={alt} />
 		</figure>
 	);
 }

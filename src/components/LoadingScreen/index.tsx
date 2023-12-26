@@ -6,9 +6,9 @@ function LoadingScreen() {
 		<div className='LoadingScreen'>
 			<h2 className='Title'>Loading</h2>
 			<div className='LoadingScreen-dots'>
-				<div className='dot'/>
-				<div className='dot'/>
-				<div className='dot'/>
+				<div className='dot' />
+				<div className='dot' />
+				<div className='dot' />
 			</div>
 		</div>
 	);

@@ -1,8 +1,8 @@
 import React from 'react';
-import './ProjectShowcase.scss';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { ProjectData } from '../../interfaces/ProjectData';
+import './ProjectShowcase.scss';
 import { LoadingScreen } from '../../components/LoadingScreen';
+import { ProjectData } from '../../interfaces/ProjectData';
 import { Settings } from '../../interfaces/Settings';
 
 function ProjectShowcase({ language }: Settings) {
@@ -27,45 +27,45 @@ function ProjectShowcase({ language }: Settings) {
 
 	return (
 		<div className='ProjectShowcase'>
-			<button
-				className='ProjectShowcase-goback'
-				onClick={handleGoBack}
-			>&lt; back</button>
+			<button className='ProjectShowcase-goback' onClick={handleGoBack}>
+				&lt; back
+			</button>
 			<h2 className='Title'>{project.title}</h2>
 			<div className='ProjectShowcase-content'>
-
 				<div className='Book Book_inverted'>
 					<p>{project.description[language]}</p>
 				</div>
 				<div className='Book'>
 					<p>
-						Technologies:<br />
+						Technologies:
+						<br />
 						{project.technologies}
 					</p>
 
 					<div className='ProjectShowcase-buttons'>
-						{
-							project.implementation &&
+						{project.implementation && (
 							<a
 								className='Button'
 								target='_blank'
 								rel='noopener noreferrer'
 								href={project.implementation}
-							>View</a>
-						}
-						{
-							project.repository &&
+							>
+								View
+							</a>
+						)}
+						{project.repository && (
 							<a
 								className='Button'
 								target='_blank'
 								rel='noopener noreferrer'
 								href={project.repository}
-							>Repository</a>
-						}
+							>
+								Repository
+							</a>
+						)}
 					</div>
 				</div>
 			</div>
-
 		</div>
 	);
 }

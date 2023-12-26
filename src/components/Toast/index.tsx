@@ -14,8 +14,8 @@ function Toast({ text, subtext, src }: ToastProps) {
 				/>
 			</figure>
 			<div className='Toast-text'>
-				<span className="Toast-title">{text}</span>
-				{ Boolean(subtext) && <span className="Toast-desc">{subtext}</span> }
+				<span className='Toast-title'>{text}</span>
+				{Boolean(subtext) && <span className='Toast-desc'>{subtext}</span>}
 			</div>
 		</div>
 	);

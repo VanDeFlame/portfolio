@@ -10,7 +10,7 @@ interface Props {
 
 function ShowcaseItem({ text, src, onClick }: Props) {
 	return (
-		<div className="ShowcaseItem" onClick={onClick}>
+		<div className='ShowcaseItem' onClick={onClick}>
 			<img src={src} alt={text} />
 			<p>{text}</p>
 		</div>

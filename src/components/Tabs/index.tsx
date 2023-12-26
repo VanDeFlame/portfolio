@@ -1,11 +1,13 @@
 import React from 'react';
-import './Tabs.scss';
 import { NavLink } from 'react-router-dom';
-import { ItemWithTooltip } from '../Item';
+import './Tabs.scss';
 import { TabLink } from '../../interfaces/TabLink';
+import { ItemWithTooltip } from '../Item';
 
 function Tabs({ name, item, url }: TabLink) {
 	const target = url.startsWith('http') ? '_blank' : '_self';
+
+	console.log(item);
 
 	return (
 		<NavLink
@@ -14,11 +16,7 @@ function Tabs({ name, item, url }: TabLink) {
 			rel={target === '_blank' ? 'noopener noreferrer' : ''}
 			className='Tabs'
 		>
-			<ItemWithTooltip
-				text={name}
-				src={item}
-				alt={name}
-			/>
+			<ItemWithTooltip text={name} src={item} alt={name} />
 		</NavLink>
 	);
 }

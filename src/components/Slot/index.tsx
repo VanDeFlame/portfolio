@@ -11,7 +11,7 @@ function Slot({ column, row, children }: Props) {
 	const gridArea = `${row} / ${column}`;
 
 	return (
-		<div className='Slot' style={(row && column) ? { gridArea } : {}}>
+		<div className='Slot' style={row && column ? { gridArea } : {}}>
 			{children}
 		</div>
 	);

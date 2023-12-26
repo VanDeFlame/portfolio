@@ -34,7 +34,7 @@ export default defineConfig({
 				await removeFiles(distPath);
 
 				console.log(`\n${counter} PNGs files removed from dist/`);
-			}
-		}
-	]
+			},
+		},
+	],
 });
